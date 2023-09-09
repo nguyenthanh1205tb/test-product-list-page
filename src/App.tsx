@@ -24,6 +24,7 @@ import ColsNameFilter from './components/ColsNameFilter';
 import ButtonCus from './components/Common/Button';
 import Modal from './components/Common/Modal';
 import FilterStatus from './components/FilterStatus';
+import Intro from './components/Intro';
 import TopFilter from './components/TopFilter';
 import { getKindProperties, getStatusProperties, numToPrice } from './helpers';
 import theme from './theme';
@@ -213,7 +214,7 @@ function App() {
   return (
     <ConfigProvider theme={theme}>
       <div className="flex flex-col justify-center items-center bg-sla">
-        <h1 className="text-5xl font-medium py-8">Test</h1>
+        <Intro />
         <div className="w-full p-8 flex flex-col space-y-4">
           <div className="flex">
             <div className="w-144">
@@ -324,6 +325,9 @@ function App() {
           >
             <TopFilter onClose={onCloseModalTopFilter} />
           </Modal>
+        </div>
+        <div className="outtro text-gray-500 text-xs">
+          Thank you for watching
         </div>
       </div>
     </ConfigProvider>

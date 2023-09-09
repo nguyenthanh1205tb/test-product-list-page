@@ -49,6 +49,13 @@ input {
   padding-left: 10px !important;
 }
 
+.intro {
+  a {
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+}
+
 .main-border-full {
   border: var(--main-border);
 }
